@@ -1,4 +1,6 @@
-﻿var Quigley = (function () {
+﻿/* QUIGLEY v/0.1 - Yet Another Text Editor */
+
+var Quigley = (function () {
     var me = {
         ui: {
             addDocumentButton: null,
