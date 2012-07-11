@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Quigley: Another editor for a world of editors.</title>
+    
+    <!-- jquery -->
+    <script src="Scripts/jquery-1.7.2.min.js"></script>
+    <!-- jquery ui -->
+    <script src="Scripts/jquery-ui-1.8.20.min.js"></script>
+    <!-- jquery templates -->
+    <script src="Scripts/jQuery.tmpl.min.js"></script>
+    <!-- tiny mce -->
+    <script src="Scripts/tinymce/tiny_mce.js"></script>    
+
+    <!-- quigley is here -->
+    <script src="Scripts/quigley.js"></script>
+
+    <!-- very spartan styling --> 
+    <link href="Content/quigley.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+<img id="t3rseLogo" src="images/id-banner.png" alt="Concept, design, and implementation by t3rse" />
+<div id="contain">
+    <div id="quigleyHeader">
+        QUIGLEY
+    </div>
+    <div id="quigleyExplainer">
+        Quigley is a light weight, tabbed notepad that uses local storage (HTML5) so that your notes are autosaved.
+    </div>
+ 
+    <div style="margin-top:3px;text-align:center;color:#CC0000;" id="log"></div>
+   <div>
+        <div id="currentTabs">
+        </div>
+        <input class='ui-button' type="button" id="saveTabButton" value="Save As New Tab" />
+        <input class='ui-button' type="button" id="removeTabButton" value="Remove Current Document" />
+    </div>
+    <div id="editorContainerDiv">
+        <textarea id="myNotes" style="height:100%;width:100%;">Scribble!</textarea>
+    </div>
+    <hr  style="height:1px;color:#f7f7f7;" />
+    <script type="text/javascript">
+        $(function () {
+            $("#editorContainerDiv, #myNotes").css("height", "800px");
+
+            // start quigley
+            Quigley.init(
+                            tinyMCE, // editor
+                            $("#saveTabButton"), // save button
+                            $("#removeTabButton"), // remove button
+                            $("#currentTabs"), // tabs
+                            $("#log") // infoDisplay                            
+            );
+
+        });
+    </script>
+    <p>Concept, design, and implementation by <a style="color:Blue;" href="http://www.t3rse.com">t3rse</a></p>
+</div>
+</body>
+</html>
