@@ -41,11 +41,12 @@ var Quigley = (function () {
     me.documentManagement.addDocument = function (vDoc) {
         me.documentManagement.documentStore.push(vDoc);
         me.documentManagement.currentDocument = vDoc.docId;
-        // save the document store
         localStorage.setItem(
             "quigley.data",
-            JSON.stringify(me.documentStore)
+            JSON.stringify(me.documentManagement.documentStore)
         );
+        localStorage.setItem(vDoc.docId, 'New document ' + vDoc.docId + ' ready to edit!');
+        me.rendering.renderContent();
     };
     me.documentManagement.loadDocuments = function () {
         var docs = JSON.parse(localStorage.getItem("quigley.data") || "[]");
@@ -54,12 +55,12 @@ var Quigley = (function () {
         }
         else {
             me.documentManagement.documentStore = [{
-                docId: me.defaultDocument,
-                displayName: me.defaultDocument,
+                docId: me.documentManagement.defaultDocument,
+                displayName: me.documentManagement.defaultDocument,
                 created: new Date()
             }];
             // on the first load, save quigley.data for the future:
-            localStorage.setItem("quigley.data", JSON.stringify(me.documentStore));
+            localStorage.setItem("quigley.data", JSON.stringify(me.documentManagement.documentStore));
         }
         me.rendering.renderContent();
     };
@@ -132,6 +133,8 @@ var Quigley = (function () {
             displayName: newDocName,
             created: new Date()
         });
+        // update editor with text?
+
         me.rendering.renderDocumentButtons();
     };
 
@@ -158,12 +161,6 @@ var Quigley = (function () {
         else {
             alert("You must have at least one document or what's the point?");
         }
-        //var currentDoc = me.documentManagement.currentDocument;
-        // make sure more than one document exists
-        // find the current document
-        // remove it from documentStore
-        // remove from isolated storage 
-        // re-render document buttons
     }
 
     me.events.saveTimerTick = function () {
