@@ -1,4 +1,8 @@
-﻿/* QUIGLEY v/0.1 - Yet Another Text Editor */
+﻿/* QUIGLEY - Yet Another Text Editor :: https://github.com/t3rse/Quigley
+/**
+* @author t3rse (David Seruyange) / http://www.t3rse.com
+* @author you? - would love comments / feedback
+*/
 
 var Quigley = (function () {
     var me = {
@@ -133,8 +137,6 @@ var Quigley = (function () {
             displayName: newDocName,
             created: new Date()
         });
-        // update editor with text?
-
         me.rendering.renderDocumentButtons();
     };
 
@@ -168,7 +170,7 @@ var Quigley = (function () {
         var content = me.ui.textEditor.editors[0].save();
         if (content != me.documentManagement.lastSavedContent) {
             localStorage.setItem(me.documentManagement.currentDocument, content);
-            me.documentManagement.lastSavedContent = content;
+            me.documentManagement.lastSavedContent = localStorage.getItem(me.documentManagement.currentDocument);
         }
     };
 
@@ -206,7 +208,7 @@ var Quigley = (function () {
                 me.rendering.renderDocumentButtons();
                 addButton.click(me.events.addDocumentHandler);
                 removeButton.click(me.events.removeDocumentHandler);
-                window.setInterval(me.events.saveTimerTick, 1000);
+                window.setInterval(me.events.saveTimerTick, 250);
             }
         });
 

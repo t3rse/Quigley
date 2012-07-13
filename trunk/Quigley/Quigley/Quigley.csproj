@@ -108,6 +108,15 @@
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
     <Content Include="Images\id-banner.png" />
     <Content Include="index.html" />
+    <Content Include="Scripts\jasmine\example\SpecRunner.html" />
+    <Content Include="Scripts\jasmine\example\spec\PlayerSpec.js" />
+    <Content Include="Scripts\jasmine\example\spec\SpecHelper.js" />
+    <Content Include="Scripts\jasmine\example\src\Player.js" />
+    <Content Include="Scripts\jasmine\example\src\Song.js" />
+    <Content Include="Scripts\jasmine\jasmine-html.js" />
+    <Content Include="Scripts\jasmine\jasmine.css" />
+    <Content Include="Scripts\jasmine\jasmine.js" />
+    <Content Include="Scripts\jasmine\json2.js" />
     <Content Include="Scripts\jquery-1.7.2-vsdoc.js" />
     <Content Include="Scripts\jquery-1.7.2.js" />
     <Content Include="Scripts\jquery-1.7.2.min.js" />
@@ -393,6 +402,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Templates\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Scripts\jasmine\spec" />
+    <None Include="Scripts\jasmine\version.rb" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
