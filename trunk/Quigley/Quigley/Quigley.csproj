@@ -108,11 +108,9 @@
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
     <Content Include="Images\id-banner.png" />
     <Content Include="index.html" />
-    <Content Include="Scripts\jasmine\example\SpecRunner.html" />
-    <Content Include="Scripts\jasmine\example\spec\PlayerSpec.js" />
-    <Content Include="Scripts\jasmine\example\spec\SpecHelper.js" />
-    <Content Include="Scripts\jasmine\example\src\Player.js" />
-    <Content Include="Scripts\jasmine\example\src\Song.js" />
+    <Content Include="Scripts\jasmine\quigley-jasmine\SpecRunner.html" />
+    <Content Include="Scripts\jasmine\quigley-jasmine\spec\QuigleySpec.js" />
+    <Content Include="Scripts\jasmine\quigley-jasmine\spec\SpecHelper.js" />
     <Content Include="Scripts\jasmine\jasmine-html.js" />
     <Content Include="Scripts\jasmine\jasmine.css" />
     <Content Include="Scripts\jasmine\jasmine.js" />

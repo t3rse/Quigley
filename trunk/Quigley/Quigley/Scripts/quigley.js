@@ -5,6 +5,12 @@
 */
 
 var Quigley = (function () {
+    var _ = {
+        LOCAL_DATA_STORE: "quigley.data",
+        DEFAULT_DOC_NAME: "Default",
+        storageEngine: localStorage
+    };
+
     var me = {
         ui: {
             addDocumentButton: null,
@@ -18,7 +24,9 @@ var Quigley = (function () {
             addDocument: null,
             loadDocuments: null,
             documentStore: null,
-            lastSavedContent: ''
+            lastSavedContent: '',
+            storeData: null,
+            retrieveData: null
         },
         events: {
             addDocumentHandler: null,
@@ -40,20 +48,20 @@ var Quigley = (function () {
     **********************************************************************************/
 
     me.documentManagement.documentStore = [];
-    me.documentManagement.defaultDocument = 'Default';
+    me.documentManagement.defaultDocument = _.DEFAULT_DOC_NAME;
     me.documentManagement.currentDocument = me.documentManagement.defaultDocument;
     me.documentManagement.addDocument = function (vDoc) {
         me.documentManagement.documentStore.push(vDoc);
         me.documentManagement.currentDocument = vDoc.docId;
-        localStorage.setItem(
-            "quigley.data",
+        me.documentManagement.storeData(
+            _.LOCAL_DATA_STORE,
             JSON.stringify(me.documentManagement.documentStore)
         );
-        localStorage.setItem(vDoc.docId, 'New document ' + vDoc.docId + ' ready to edit!');
+        me.documentManagement.storeData(vDoc.docId, 'New document ' + vDoc.docId + ' ready to edit!');
         me.rendering.renderContent();
     };
     me.documentManagement.loadDocuments = function () {
-        var docs = JSON.parse(localStorage.getItem("quigley.data") || "[]");
+        var docs = JSON.parse(me.documentManagement.retrieveData(_.LOCAL_DATA_STORE) || "[]");
         if (docs.length > 0) {
             me.documentManagement.documentStore = docs;
         }
@@ -64,11 +72,16 @@ var Quigley = (function () {
                 created: new Date()
             }];
             // on the first load, save quigley.data for the future:
-            localStorage.setItem("quigley.data", JSON.stringify(me.documentManagement.documentStore));
+            me.documentManagement.storeData(_.LOCAL_DATA_STORE, JSON.stringify(me.documentManagement.documentStore));
         }
         me.rendering.renderContent();
     };
-
+    me.documentManagement.storeData = function (storeKey, serializedData) {
+        _.storageEngine.setItem(storeKey, serializedData);
+    };
+    me.documentManagement.retrieveData = function (storeKey) {
+        return _.storageEngine.getItem(storeKey);
+    }
 
     /**********************************************************************************
     ***** RENDERING ITEMS TO SCREEN  **************************************************
@@ -96,7 +109,7 @@ var Quigley = (function () {
         var i = 0;
         for (i = 0; i < docs.length; i++) {
             if (docs[i].docId == me.documentManagement.currentDocument) {
-                var oldValue = localStorage.getItem(me.documentManagement.currentDocument)
+                var oldValue = me.documentManagement.retrieveData(me.documentManagement.currentDocument)
                 if (oldValue != null) {
                     me.ui.textEditor.editors[0].setContent(oldValue);
                 }
@@ -118,7 +131,7 @@ var Quigley = (function () {
         $.each(me.documentManagement.documentStore, function (ind, val) {
             if (val.docId == tmpId) {
                 val.displayName = newDocName;
-                localStorage.setItem("quigley.data", JSON.stringify(me.documentManagement.documentStore));
+                lme.documentManagement.storeData(_.LOCAL_DATA_STORE, JSON.stringify(me.documentManagement.documentStore));
             }
         });
     };
@@ -169,8 +182,8 @@ var Quigley = (function () {
         me.rendering.renderTimeHeader();
         var content = me.ui.textEditor.editors[0].save();
         if (content != me.documentManagement.lastSavedContent) {
-            localStorage.setItem(me.documentManagement.currentDocument, content);
-            me.documentManagement.lastSavedContent = localStorage.getItem(me.documentManagement.currentDocument);
+            me.documentManagement.storeData(me.documentManagement.currentDocument, content);
+            me.documentManagement.lastSavedContent = me.documentManagement.retrieveData(me.documentManagement.currentDocument);
         }
     };
 
@@ -181,7 +194,7 @@ var Quigley = (function () {
     ***** INITIALIZE QUIGLEY **********************************************************
     **********************************************************************************/
 
-    me.init = function (targetEditor, addButton, removeButton, currentTabs, logViewDiv) {
+    me.init = function (targetEditor, addButton, removeButton, currentTabs, logViewDiv, storageProvider) {
 
         targetEditor.init({
             mode: "textareas",
@@ -200,6 +213,9 @@ var Quigley = (function () {
             skin: "o2k7",
             skin_variant: "silver",
             init_instance_callback: function () {
+
+                _.storageEngine = storageProvider;
+
                 me.ui.textEditor = targetEditor;
                 me.ui.logView = logViewDiv;
                 me.ui.currentTabs = currentTabs;
