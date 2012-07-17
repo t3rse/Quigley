@@ -230,6 +230,11 @@ var Quigley = (function () {
 
     }
     return {
-        init: me.init
+        init: me.init,
+        // for testing
+        internals: {
+            conf: _,
+            engine: me
+        }
     };
 })();
