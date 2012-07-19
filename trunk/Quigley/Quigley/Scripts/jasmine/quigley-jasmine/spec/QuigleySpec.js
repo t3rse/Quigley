@@ -15,6 +15,9 @@
                     {
                         setContent: function (content) {
                             console.log(content);
+                        },
+                        save: function(){
+                            return "Saved document";
                         }
                     }
                 ]
@@ -37,9 +40,12 @@
         };
     })();
 
+    // mock ui elements
+    var mockAddButton = $(document.createElement("button"));
+
     // init with jquery created ui elements
     Quigley.init(mockMCE,
-        $(document.createElement("button")),
+        mockAddButton,
         $(document.createElement("button")),
         $(document.createElement("div")),
         $(document.createElement("div")),
@@ -68,6 +74,13 @@
 
     it("has a storage engine.", function () {
         expect(Quigley.internals.conf.storageEngine != null).toBeTruthy();
+    });
+
+    it("let's you add a document if you click.", function () {
+        var docStore = Quigley.internals.engine.documentManagement.documentStore;
+        var docCount = docStore.length;
+        mockAddButton.click();
+        expect(docStore.length = ++docCount).toBeTruthy();
     });
 
 
