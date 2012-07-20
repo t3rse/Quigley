@@ -13,11 +13,12 @@
             },
             editors: [
                     {
+                        editorContent: '',
                         setContent: function (content) {
-                            console.log(content);
+                            this.editorContent = content;
                         },
-                        save: function(){
-                            return "Saved document";
+                        save: function () {
+                            return this.editorContent;
                         }
                     }
                 ]
@@ -81,6 +82,16 @@
         var docCount = docStore.length;
         mockAddButton.click();
         expect(docStore.length = ++docCount).toBeTruthy();
+    });
+
+    it("will autosave the contents of the current document to the storage engine.", function () {
+        var currentDoc = Quigley.internals.engine.documentManagement.currentDocument;
+        var contentForDoc = 'I just made an edit at ' + new Date();
+        mockMCE.editors[0].setContent(contentForDoc);
+        setTimeout(function () {
+            var contentFromStorage = mockStorage.getItem(currentDoc);
+            expect(contentForDoc == contentFromStorage).toBeTruthy();
+        }, 1000);
     });
 
 
