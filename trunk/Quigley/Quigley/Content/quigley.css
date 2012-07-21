@@ -5,6 +5,7 @@
     color:#000;
 
 }
+
 #t3rseLogo
 {
     width:100px;
@@ -16,13 +17,14 @@
 #quigleyHeader
 {
     text-align:center;
-    font-size:4.8em;    
+    font-size:3.8em;    
 }
 #quigleyExplainer
 {
     border-bottom:1px dotted #cccccc;
     text-align:center;
     color:#333;
+    height:25px;
 }
 #contain
 {
@@ -52,7 +54,11 @@
     color:#CCC;
     cursor:pointer;    
 }
-
+hr
+{
+    height:1px;
+    color:#f7f7f7;
+}
 .docSpan
 {
     background-color:#f7f7f7;
@@ -73,4 +79,23 @@
 #editorContainerDiv
 {
     border-top:5px solid orange;    
+}
+
+#log
+{
+    margin-top:10px;
+    text-align:center;
+    color:#CC0000;    
+    margin-bottom:10px;
+}
+
+#myNotes
+{
+    height:100%;
+    width:100%;
+}
+
+#githubLink
+{
+    color:Blue;    
 }

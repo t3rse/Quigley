@@ -43,11 +43,12 @@
 
     // mock ui elements
     var mockAddButton = $(document.createElement("button"));
+    var mockDeleteButton = $(document.createElement("button"));
 
     // init with jquery created ui elements
     Quigley.init(mockMCE,
         mockAddButton,
-        $(document.createElement("button")),
+        mockDeleteButton,
         $(document.createElement("div")),
         $(document.createElement("div")),
         mockStorage
@@ -77,7 +78,7 @@
         expect(Quigley.internals.conf.storageEngine != null).toBeTruthy();
     });
 
-    it("let's you add a document if you click.", function () {
+    it("let's you add a document if you click the `add` button.", function () {
         var docStore = Quigley.internals.engine.documentManagement.documentStore;
         var docCount = docStore.length;
         mockAddButton.click();
@@ -87,12 +88,20 @@
     it("will autosave the contents of the current document to the storage engine.", function () {
         var currentDoc = Quigley.internals.engine.documentManagement.currentDocument;
         var contentForDoc = 'I just made an edit at ' + new Date();
-        mockMCE.editors[0].setContent(contentForDoc);
-        setTimeout(function () {
+        runs(function () {
+            mockMCE.editors[0].setContent(contentForDoc);
+        });
+        waits(300);
+        runs(function () {
             var contentFromStorage = mockStorage.getItem(currentDoc);
             expect(contentForDoc == contentFromStorage).toBeTruthy();
-        }, 1000);
+        });
     });
 
-
+    it("let's you delete a document if you click `delete` button", function () {
+        var docStore = Quigley.internals.engine.documentManagement.documentStore;
+        var docCount = docStore.length;
+        mockAddButton.click();
+        expect(docStore.length = --docCount).toBeTruthy();
+    });
 });

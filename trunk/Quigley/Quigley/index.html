@@ -28,17 +28,17 @@
         Quigley is a light weight, tabbed notepad that uses local storage (HTML5) so that your notes are autosaved.
     </div>
  
-    <div style="margin-top:3px;text-align:center;color:#CC0000;" id="log"></div>
+    <div id="log"></div>
    <div>
         <div id="currentTabs">
         </div>
-        <input class='ui-button' type="button" id="saveTabButton" value="Save As New Tab" />
+        <input class='ui-button' type="button" id="saveTabButton" value="New Tab" />
         <input class='ui-button' type="button" id="removeTabButton" value="Remove Current Document" />
     </div>
     <div id="editorContainerDiv">
-        <textarea id="myNotes" style="height:100%;width:100%;">Scribble!</textarea>
+        <textarea id="myNotes">Scribble!</textarea>
     </div>
-    <hr  style="height:1px;color:#f7f7f7;" />
+    <hr />
     <script type="text/javascript">
         $(function () {
             $("#editorContainerDiv, #myNotes").css("height", "800px");
@@ -55,7 +55,7 @@
 
         });
     </script>
-    <p>Concept, design, and implementation by <a style="color:Blue;" href="http://www.t3rse.com">t3rse</a></p>
+    <p>Follow Quigley on <a id="githubLink" href="https://github.com/t3rse/Quigley">Github</a></p>
 </div>
 </body>
 </html>

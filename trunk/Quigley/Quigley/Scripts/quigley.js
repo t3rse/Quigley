@@ -8,6 +8,7 @@ var Quigley = (function () {
     var _ = {
         LOCAL_DATA_STORE: "quigley.data",
         DEFAULT_DOC_NAME: "Default",
+        SAVE_LOOP_SPEED: 250,
         storageEngine: localStorage
     };
 
@@ -224,7 +225,7 @@ var Quigley = (function () {
                 me.rendering.renderDocumentButtons();
                 addButton.click(me.events.addDocumentHandler);
                 removeButton.click(me.events.removeDocumentHandler);
-                window.setInterval(me.events.saveTimerTick, 250);
+                window.setInterval(me.events.saveTimerTick, _.SAVE_LOOP_SPEED);
             }
         });
 
