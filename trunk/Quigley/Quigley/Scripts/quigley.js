@@ -9,6 +9,7 @@ var Quigley = (function () {
         LOCAL_DATA_STORE: "quigley.data",
         DEFAULT_DOC_NAME: "Default",
         SAVE_LOOP_SPEED: 250,
+        enableAutoSaveFlag: true,
         storageEngine: localStorage
     };
 
@@ -34,7 +35,8 @@ var Quigley = (function () {
             removeDocumentHandler: null,
             onTabSelect: null,
             onTabLostFocus: null,
-            saveTimerTick: null
+            saveTimerTick: null,
+            timerSafeAction: null
         },
         rendering: {
             renderDocumentButtons: null,
@@ -58,7 +60,7 @@ var Quigley = (function () {
             _.LOCAL_DATA_STORE,
             JSON.stringify(me.documentManagement.documentStore)
         );
-        me.documentManagement.storeData(vDoc.docId, 'New document ' + vDoc.docId + ' ready to edit!');
+        me.documentManagement.storeData(vDoc.docId, 'New document <b>' + vDoc.displayName + '</b> ready to edit!');
         me.rendering.renderContent();
     };
     me.documentManagement.loadDocuments = function () {
@@ -132,62 +134,74 @@ var Quigley = (function () {
         $.each(me.documentManagement.documentStore, function (ind, val) {
             if (val.docId == tmpId) {
                 val.displayName = newDocName;
-                lme.documentManagement.storeData(_.LOCAL_DATA_STORE, JSON.stringify(me.documentManagement.documentStore));
+                me.documentManagement.storeData(_.LOCAL_DATA_STORE, JSON.stringify(me.documentManagement.documentStore));
             }
         });
     };
 
     me.events.onTabSelect = function () {
-        $(".docSpan").attr("class", "docSpan");
-        $(this).addClass("selectedDoc")
-        me.documentManagement.currentDocument = $(this)[0].id;
-        me.rendering.renderContent();
+        var currTab = $(this);
+        me.events.timerSafeAction(function () {
+            $(".docSpan").attr("class", "docSpan");
+            currTab.addClass("selectedDoc")
+            me.documentManagement.currentDocument = currTab[0].id;
+            me.rendering.renderContent();
+        });
     };
 
     me.events.addDocumentHandler = function () {
-        var newDocName = 'Document' + me.documentManagement.documentStore.length;
-        me.documentManagement.addDocument({
-            docId: newDocName,
-            displayName: newDocName,
-            created: new Date()
+        me.events.timerSafeAction(function () {
+            var newDocName = 'Document' + me.documentManagement.documentStore.length;
+            me.documentManagement.addDocument({
+                docId: newDocName + '_' + new Date().getTime(),
+                displayName: newDocName,
+                created: new Date()
+            });
+            me.rendering.renderDocumentButtons();
         });
-        me.rendering.renderDocumentButtons();
     };
 
     me.events.removeDocumentHandler = function () {
-        var curr = me.documentManagement.currentDocument;
-        var store = me.documentManagement.documentStore;
-        if (store.length > 1) {
-            var i;
-            for (i = store.length - 1; i > 0; i--) {
-                if (store[i].docId == curr) {
-                    localStorage.removeItem(curr);
-                    var tmpStore = [];
-                    $.each(store, function (idx, doc) {
-                        if (doc.docId != curr) tmpStore.push(doc);
-                    });
-                    me.documentManagement.currentDocument = store[i - 1].docId;
-                    me.documentManagement.documentStore = tmpStore;
-                    me.rendering.renderDocumentButtons();
-                    me.rendering.renderContent();
-                    break;
+        me.events.timerSafeAction(function () {
+            var curr = me.documentManagement.currentDocument;
+            var store = me.documentManagement.documentStore;
+            if (store.length > 1) {
+                var i;
+                for (i = store.length - 1; i > 0; i--) {
+                    if (store[i].docId == curr) {
+                        localStorage.removeItem(curr);
+                        var tmpStore = [];
+                        $.each(store, function (idx, doc) {
+                            if (doc.docId != curr) tmpStore.push(doc);
+                        });
+                        me.documentManagement.currentDocument = store[i - 1].docId;
+                        me.documentManagement.documentStore = tmpStore;
+                        me.rendering.renderDocumentButtons();
+                        me.rendering.renderContent();
+                        break;
+                    }
                 }
             }
-        }
-        else {
-            alert("You must have at least one document or what's the point?");
-        }
+            else {
+                alert("You must have at least one document or what's the point?");
+            }
+        });
     }
 
     me.events.saveTimerTick = function () {
         me.rendering.renderTimeHeader();
         var content = me.ui.textEditor.editors[0].save();
-        if (content != me.documentManagement.lastSavedContent) {
+        if (content != me.documentManagement.lastSavedContent && _.enableAutoSaveFlag) {
             me.documentManagement.storeData(me.documentManagement.currentDocument, content);
             me.documentManagement.lastSavedContent = me.documentManagement.retrieveData(me.documentManagement.currentDocument);
         }
     };
 
+    me.events.timerSafeAction = function (safeCode) {
+        _.enableAutoSaveFlag = false;
+        safeCode();
+        _.enableAutoSaveFlag = true;
+    }
 
     me.ui.currentTabs = null;
 

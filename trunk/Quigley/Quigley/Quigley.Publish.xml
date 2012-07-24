@@ -1,12 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <publishData>
-  <publishProfile publishUrl="C:\Release\Quigley.0.5" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="True" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+  <publishProfile publishUrl="C:\Release\Quigley.0.6" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="True" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
     <file relUrl="Scripts/jasmine/quigley-jasmine/SpecRunner.html" publishTime="07/15/2012 23:10:12" />
     <file relUrl="Scripts/tinymce/themes/advanced/img/flash.gif" publishTime="06/23/2012 10:23:55" />
     <file relUrl="Scripts/tinymce/themes/simple/skins/o2k7/img/button_bg.png" publishTime="06/23/2012 10:23:52" />
     <file relUrl="Scripts/tinymce/plugins/xhtmlxtras/del.htm" publishTime="06/23/2012 10:23:56" />
     <file relUrl="Scripts/tinymce/license.txt" publishTime="06/23/2012 10:24:06" />
     <file relUrl="Scripts/tinymce/plugins/pagebreak/editor_plugin_src.js" publishTime="06/23/2012 10:23:59" />
+    <file relUrl="Content/themes/base/images/ui-bg_glass_55_fbf9ee_1x400.png" publishTime="06/23/2012 10:22:04" />
     <file relUrl="Scripts/tinymce/plugins/searchreplace/editor_plugin.js" publishTime="06/23/2012 10:23:58" />
     <file relUrl="Scripts/tinymce/plugins/xhtmlxtras/js/del.js" publishTime="06/23/2012 10:23:55" />
     <file relUrl="Scripts/tinymce/plugins/emotions/img/smiley-smile.gif" publishTime="06/23/2012 10:24:03" />
@@ -14,7 +15,7 @@
     <file relUrl="Scripts/tinymce/themes/advanced/skins/o2k7/img/button_bg_black.png" publishTime="06/23/2012 10:23:53" />
     <file relUrl="Scripts/tinymce/plugins/style/editor_plugin.js" publishTime="06/23/2012 10:23:58" />
     <file relUrl="Scripts/tinymce/themes/advanced/skins/default/ui.css" publishTime="06/23/2012 10:23:53" />
-    <file relUrl="Scripts/tinymce/plugins/autoresize/editor_plugin_src.js" publishTime="06/23/2012 10:24:04" />
+    <file relUrl="Scripts/tinymce/themes/advanced/js/link.js" publishTime="06/23/2012 10:23:54" />
     <file relUrl="Scripts/tinymce/plugins/table/editor_plugin_src.js" publishTime="06/23/2012 10:23:57" />
     <file relUrl="Scripts/tinymce/plugins/searchreplace/langs/en_dlg.js" publishTime="06/23/2012 10:23:58" />
     <file relUrl="Scripts/tinymce/plugins/bbcode/editor_plugin_src.js" publishTime="06/23/2012 10:24:04" />
@@ -35,29 +36,26 @@
     <file relUrl="Content/themes/base/minified/images/ui-icons_cd0a0a_256x240.png" publishTime="06/23/2012 10:22:03" />
     <file relUrl="Scripts/tinymce/plugins/table/cell.htm" publishTime="06/23/2012 10:23:57" />
     <file relUrl="Scripts/tinymce/plugins/searchreplace/editor_plugin_src.js" publishTime="06/23/2012 10:23:58" />
-    <file relUrl="Scripts/tinymce/plugins/inlinepopups/skins/clearlooks2/img/alert.gif" publishTime="06/23/2012 10:24:01" />
     <file relUrl="Scripts/tinymce/plugins/style/editor_plugin_src.js" publishTime="06/23/2012 10:23:58" />
     <file relUrl="Content/themes/base/jquery.ui.tabs.css" publishTime="06/23/2012 10:22:04" />
     <file relUrl="Scripts/tinymce/plugins/table/editor_plugin.js" publishTime="06/23/2012 10:23:57" />
-    <file relUrl="Scripts/tinymce/plugins/emotions/img/smiley-frown.gif" publishTime="06/23/2012 10:24:03" />
+    <file relUrl="Scripts/tinymce/plugins/inlinepopups/skins/clearlooks2/img/alert.gif" publishTime="06/23/2012 10:24:01" />
     <file relUrl="Scripts/tinymce/plugins/emotions/img/smiley-yell.gif" publishTime="06/23/2012 10:24:03" />
     <file relUrl="Content/themes/base/minified/images/ui-bg_flat_0_aaaaaa_40x100.png" publishTime="06/23/2012 10:22:04" />
     <file relUrl="Scripts/tinymce/themes/advanced/js/about.js" publishTime="06/23/2012 10:23:54" />
     <file relUrl="Scripts/tinymce/plugins/autosave/editor_plugin.js" publishTime="06/23/2012 10:24:04" />
-    <file relUrl="Scripts/tinymce/plugins/template/langs/en_dlg.js" publishTime="06/23/2012 10:23:56" />
     <file relUrl="Scripts/tinymce/plugins/example/img/example.gif" publishTime="06/23/2012 10:24:02" />
     <file relUrl="Scripts/tinymce/plugins/xhtmlxtras/attributes.htm" publishTime="06/23/2012 10:23:56" />
     <file relUrl="Scripts/jasmine/jasmine-html.js" publishTime="07/12/2012 23:15:37" />
     <file relUrl="Content/themes/base/minified/jquery.ui.progressbar.min.css" publishTime="06/23/2012 10:22:03" />
-    <file relUrl="bin/Quigley.dll" publishTime="07/20/2012 07:29:00" />
+    <file relUrl="bin/Quigley.dll" publishTime="07/23/2012 23:35:58" />
     <file relUrl="Scripts/tinymce/themes/advanced/skins/o2k7/content.css" publishTime="06/23/2012 10:23:53" />
     <file relUrl="Content/themes/base/jquery.ui.resizable.css" publishTime="06/23/2012 10:22:04" />
     <file relUrl="Scripts/tinymce/plugins/emotions/img/smiley-surprised.gif" publishTime="06/23/2012 10:24:03" />
     <file relUrl="Scripts/tinymce/plugins/advimage/js/image.js" publishTime="06/23/2012 10:24:05" />
-    <file relUrl="Scripts/tinymce/plugins/xhtmlxtras/editor_plugin_src.js" publishTime="06/23/2012 10:23:55" />
     <file relUrl="Scripts/tinymce/plugins/fullscreen/editor_plugin.js" publishTime="06/23/2012 10:24:01" />
     <file relUrl="packages.config" publishTime="06/24/2012 10:46:34" />
-    <file relUrl="Scripts/tinymce/plugins/xhtmlxtras/abbr.htm" publishTime="06/23/2012 10:23:56" />
+    <file relUrl="Scripts/tinymce/themes/advanced/js/charmap.js" publishTime="06/23/2012 10:23:54" />
     <file relUrl="Scripts/tinymce/plugins/insertdatetime/editor_plugin_src.js" publishTime="06/23/2012 10:24:01" />
     <file relUrl="Scripts/tinymce/plugins/fullpage/fullpage.htm" publishTime="06/23/2012 10:24:02" />
     <file relUrl="Scripts/tinymce/plugins/emotions/img/smiley-embarassed.gif" publishTime="06/23/2012 10:24:03" />
@@ -94,20 +92,18 @@
     <file relUrl="Content/themes/base/minified/jquery.ui.datepicker.min.css" publishTime="06/23/2012 10:22:03" />
     <file relUrl="Scripts/tinymce/plugins/template/editor_plugin.js" publishTime="06/23/2012 10:23:57" />
     <file relUrl="Content/themes/base/minified/jquery.ui.slider.min.css" publishTime="06/23/2012 10:22:03" />
-    <file relUrl="Content/themes/base/images/ui-bg_glass_75_e6e6e6_1x400.png" publishTime="06/23/2012 10:22:04" />
     <file relUrl="Scripts/tinymce/plugins/template/template.htm" publishTime="06/23/2012 10:23:56" />
-    <file relUrl="Content/themes/base/minified/images/ui-bg_glass_55_fbf9ee_1x400.png" publishTime="06/23/2012 10:22:04" />
     <file relUrl="Scripts/tinymce/plugins/advhr/rule.htm" publishTime="06/23/2012 10:24:05" />
     <file relUrl="Scripts/tinymce/plugins/example/js/dialog.js" publishTime="06/23/2012 10:24:02" />
     <file relUrl="Scripts/tinymce/tiny_mce_popup.js" publishTime="06/23/2012 10:23:52" />
-    <file relUrl="bin/Quigley.pdb" publishTime="07/20/2012 07:29:00" />
+    <file relUrl="bin/Quigley.pdb" publishTime="07/23/2012 23:35:58" />
     <file relUrl="Scripts/tinymce/themes/advanced/shortcuts.htm" publishTime="06/23/2012 10:23:53" />
     <file relUrl="Content/themes/base/minified/jquery.ui.tabs.min.css" publishTime="06/23/2012 10:22:03" />
     <file relUrl="Content/themes/base/images/ui-icons_cd0a0a_256x240.png" publishTime="06/23/2012 10:22:04" />
-    <file relUrl="Scripts/tinymce/plugins/advlist/editor_plugin.js" publishTime="06/23/2012 10:24:04" />
+    <file relUrl="Content/themes/base/images/ui-bg_glass_75_dadada_1x400.png" publishTime="06/23/2012 10:22:04" />
     <file relUrl="Scripts/tinymce/plugins/advlink/editor_plugin.js" publishTime="06/23/2012 10:24:05" />
     <file relUrl="Scripts/tinymce/plugins/paste/editor_plugin.js" publishTime="06/23/2012 10:23:59" />
-    <file relUrl="Scripts/quigley.js" publishTime="07/16/2012 22:22:04" />
+    <file relUrl="Scripts/quigley.js" publishTime="07/23/2012 23:33:28" />
     <file relUrl="Scripts/tinymce/themes/simple/editor_template_src.js" publishTime="06/23/2012 10:23:52" />
     <file relUrl="Content/themes/base/minified/images/ui-bg_highlight-soft_75_cccccc_1x100.png" publishTime="06/23/2012 10:22:03" />
     <file relUrl="Scripts/tinymce/plugins/table/css/cell.css" publishTime="06/23/2012 10:23:57" />
@@ -139,11 +135,11 @@
     <file relUrl="Scripts/jQuery.tmpl.min.js" publishTime="06/24/2012 10:46:33" />
     <file relUrl="Content/themes/base/minified/images/ui-bg_glass_75_e6e6e6_1x400.png" publishTime="06/23/2012 10:22:03" />
     <file relUrl="Scripts/tinymce/plugins/autolink/editor_plugin_src.js" publishTime="06/23/2012 10:24:04" />
-    <file relUrl="Scripts/tinymce/plugins/advhr/css/advhr.css" publishTime="06/23/2012 10:24:06" />
+    <file relUrl="Scripts/tinymce/plugins/xhtmlxtras/editor_plugin_src.js" publishTime="06/23/2012 10:23:55" />
     <file relUrl="Scripts/tinymce/plugins/paste/js/pasteword.js" publishTime="06/23/2012 10:23:59" />
     <file relUrl="Scripts/tinymce/plugins/advhr/langs/en_dlg.js" publishTime="06/23/2012 10:24:05" />
     <file relUrl="Scripts/tinymce/themes/advanced/skins/default/img/tabs.gif" publishTime="06/23/2012 10:23:53" />
-    <file relUrl="Scripts/tinymce/themes/advanced/js/charmap.js" publishTime="06/23/2012 10:23:54" />
+    <file relUrl="Scripts/tinymce/plugins/advlink/js/advlink.js" publishTime="06/23/2012 10:24:05" />
     <file relUrl="Scripts/tinymce/plugins/fullpage/js/fullpage.js" publishTime="06/23/2012 10:24:02" />
     <file relUrl="Scripts/tinymce/plugins/preview/preview.html" publishTime="06/23/2012 10:23:59" />
     <file relUrl="Scripts/tinymce/plugins/advimage/image.htm" publishTime="06/23/2012 10:24:05" />
@@ -163,6 +159,7 @@
     <file relUrl="Scripts/tinymce/plugins/xhtmlxtras/js/abbr.js" publishTime="06/23/2012 10:23:55" />
     <file relUrl="Scripts/tinymce/plugins/table/css/row.css" publishTime="06/23/2012 10:23:57" />
     <file relUrl="Scripts/jasmine/jasmine.js" publishTime="07/12/2012 23:15:37" />
+    <file relUrl="Scripts/tinymce/themes/advanced/skins/default/img/progress.gif" publishTime="06/23/2012 10:23:53" />
     <file relUrl="Scripts/tinymce/themes/advanced/color_picker.htm" publishTime="06/23/2012 10:23:55" />
     <file relUrl="Scripts/tinymce/plugins/paste/langs/en_dlg.js" publishTime="06/23/2012 10:23:59" />
     <file relUrl="Scripts/tinymce/plugins/xhtmlxtras/cite.htm" publishTime="06/23/2012 10:23:56" />
@@ -172,28 +169,29 @@
     <file relUrl="Scripts/tinymce/themes/advanced/source_editor.htm" publishTime="06/23/2012 10:23:53" />
     <file relUrl="Scripts/tinymce/themes/advanced/skins/default/img/buttons.png" publishTime="06/23/2012 10:23:53" />
     <file relUrl="Scripts/tinymce/plugins/media/langs/en_dlg.js" publishTime="06/23/2012 10:24:00" />
-    <file relUrl="Scripts/tinymce/themes/advanced/skins/default/img/menu_arrow.gif" publishTime="06/23/2012 10:23:53" />
+    <file relUrl="Content/themes/base/minified/images/ui-icons_2e83ff_256x240.png" publishTime="06/23/2012 10:22:03" />
     <file relUrl="Scripts/tinymce/themes/simple/langs/en.js" publishTime="06/23/2012 10:23:52" />
     <file relUrl="Scripts/tinymce/themes/advanced/skins/o2k7/img/button_bg.png" publishTime="06/23/2012 10:23:53" />
     <file relUrl="Scripts/tinymce/plugins/advlink/link.htm" publishTime="06/23/2012 10:24:04" />
     <file relUrl="Scripts/tinymce/themes/advanced/skins/default/dialog.css" publishTime="06/23/2012 10:23:53" />
     <file relUrl="Scripts/tinymce/plugins/searchreplace/js/searchreplace.js" publishTime="06/23/2012 10:23:58" />
+    <file relUrl="Scripts/tinymce/themes/advanced/editor_template.js" publishTime="06/23/2012 10:23:55" />
     <file relUrl="Scripts/tinymce/plugins/media/css/media.css" publishTime="06/23/2012 10:24:00" />
     <file relUrl="Scripts/tinymce/themes/advanced/img/icons.gif" publishTime="06/23/2012 10:23:55" />
     <file relUrl="Scripts/jasmine/quigley-jasmine/spec/SpecHelper.js" publishTime="07/12/2012 23:15:37" />
     <file relUrl="Content/themes/base/minified/jquery.ui.dialog.min.css" publishTime="06/23/2012 10:22:03" />
     <file relUrl="Scripts/tinymce/plugins/paste/pasteword.htm" publishTime="06/23/2012 10:23:59" />
+    <file relUrl="Scripts/tinymce/themes/simple/skins/default/ui.css" publishTime="06/23/2012 10:23:52" />
     <file relUrl="Scripts/tinymce/plugins/nonbreaking/editor_plugin_src.js" publishTime="06/23/2012 10:24:00" />
     <file relUrl="Scripts/tinymce/plugins/emotions/img/smiley-tongue-out.gif" publishTime="06/23/2012 10:24:03" />
     <file relUrl="Content/themes/base/minified/jquery.ui.button.min.css" publishTime="06/23/2012 10:22:03" />
-    <file relUrl="Scripts/tinymce/themes/simple/skins/default/ui.css" publishTime="06/23/2012 10:23:52" />
+    <file relUrl="Scripts/tinymce/plugins/advimage/editor_plugin.js" publishTime="06/23/2012 10:24:05" />
     <file relUrl="Scripts/tinymce/plugins/nonbreaking/editor_plugin.js" publishTime="06/23/2012 10:24:00" />
     <file relUrl="Scripts/tinymce/plugins/fullpage/css/fullpage.css" publishTime="06/23/2012 10:24:02" />
     <file relUrl="Scripts/tinymce/plugins/emotions/img/smiley-kiss.gif" publishTime="06/23/2012 10:24:03" />
     <file relUrl="Scripts/tinymce/themes/advanced/js/color_picker.js" publishTime="06/23/2012 10:23:54" />
     <file relUrl="Scripts/tinymce/plugins/template/js/template.js" publishTime="06/23/2012 10:23:56" />
     <file relUrl="Content/themes/base/minified/images/ui-icons_454545_256x240.png" publishTime="06/23/2012 10:22:03" />
-    <file relUrl="Content/themes/base/images/ui-bg_flat_0_aaaaaa_40x100.png" publishTime="06/23/2012 10:22:04" />
     <file relUrl="Content/themes/base/minified/jquery.ui.resizable.min.css" publishTime="06/23/2012 10:22:03" />
     <file relUrl="Scripts/tinymce/plugins/visualchars/editor_plugin.js" publishTime="06/23/2012 10:23:56" />
     <file relUrl="Scripts/tinymce/plugins/emotions/img/smiley-cool.gif" publishTime="06/23/2012 10:24:03" />
@@ -235,7 +233,7 @@
     <file relUrl="Scripts/tinymce/plugins/preview/example.html" publishTime="06/23/2012 10:23:59" />
     <file relUrl="Content/themes/base/jquery.ui.selectable.css" publishTime="06/23/2012 10:22:04" />
     <file relUrl="Scripts/tinymce/plugins/visualchars/editor_plugin_src.js" publishTime="06/23/2012 10:23:56" />
-    <file relUrl="Scripts/tinymce/themes/advanced/skins/default/img/progress.gif" publishTime="06/23/2012 10:23:53" />
+    <file relUrl="Scripts/tinymce/plugins/xhtmlxtras/ins.htm" publishTime="06/23/2012 10:23:55" />
     <file relUrl="Scripts/tinymce/themes/advanced/skins/highcontrast/dialog.css" publishTime="06/23/2012 10:23:53" />
     <file relUrl="Scripts/tinymce/themes/advanced/img/trans.gif" publishTime="06/23/2012 10:23:54" />
     <file relUrl="Scripts/tinymce/plugins/emotions/img/smiley-foot-in-mouth.gif" publishTime="06/23/2012 10:24:03" />
@@ -243,8 +241,9 @@
     <file relUrl="Content/themes/base/jquery.ui.progressbar.css" publishTime="06/23/2012 10:22:04" />
     <file relUrl="Scripts/tinymce/themes/advanced/js/image.js" publishTime="06/23/2012 10:23:54" />
     <file relUrl="Scripts/tinymce/plugins/table/css/table.css" publishTime="06/23/2012 10:23:57" />
+    <file relUrl="Scripts/tinymce/plugins/xhtmlxtras/abbr.htm" publishTime="06/23/2012 10:23:56" />
     <file relUrl="Scripts/tinymce/plugins/advlink/css/advlink.css" publishTime="06/23/2012 10:24:05" />
-    <file relUrl="Scripts/jasmine/quigley-jasmine/spec/QuigleySpec.js" publishTime="07/19/2012 22:50:37" />
+    <file relUrl="Scripts/jasmine/quigley-jasmine/spec/QuigleySpec.js" publishTime="07/20/2012 23:15:30" />
     <file relUrl="Scripts/tinymce/themes/advanced/skins/highcontrast/ui.css" publishTime="06/23/2012 10:23:53" />
     <file relUrl="Scripts/modernizr-2.5.3.js" publishTime="06/23/2012 10:22:25" />
     <file relUrl="Scripts/jasmine/json2.js" publishTime="07/12/2012 23:15:37" />
@@ -257,11 +256,13 @@
     <file relUrl="Content/themes/base/minified/jquery-ui.min.css" publishTime="06/23/2012 10:22:03" />
     <file relUrl="Scripts/jquery-1.7.2-vsdoc.js" publishTime="06/23/2012 10:21:39" />
     <file relUrl="Scripts/tinymce/plugins/save/editor_plugin.js" publishTime="06/23/2012 10:23:59" />
+    <file relUrl="Scripts/tinymce/plugins/example_dependency/editor_plugin_src.js" publishTime="06/23/2012 10:24:02" />
     <file relUrl="Scripts/tinymce/plugins/xhtmlxtras/langs/en_dlg.js" publishTime="06/23/2012 10:23:55" />
     <file relUrl="Content/themes/base/minified/jquery.ui.core.min.css" publishTime="06/23/2012 10:22:03" />
     <file relUrl="Scripts/tinymce/langs/en.js" publishTime="06/23/2012 10:24:06" />
     <file relUrl="Content/themes/base/jquery.ui.accordion.css" publishTime="06/23/2012 10:22:04" />
     <file relUrl="Scripts/tinymce/plugins/advlist/editor_plugin_src.js" publishTime="06/23/2012 10:24:04" />
+    <file relUrl="Scripts/tinymce/plugins/advhr/css/advhr.css" publishTime="06/23/2012 10:24:06" />
     <file relUrl="Scripts/tinymce/themes/advanced/langs/en_dlg.js" publishTime="06/23/2012 10:23:54" />
     <file relUrl="Scripts/tinymce/themes/advanced/editor_template_src.js" publishTime="06/23/2012 10:23:55" />
     <file relUrl="Scripts/tinymce/themes/advanced/img/shockwave.gif" publishTime="06/23/2012 10:23:54" />
@@ -270,7 +271,7 @@
     <file relUrl="Scripts/tinymce/themes/advanced/img/quicktime.gif" publishTime="06/23/2012 10:23:54" />
     <file relUrl="Scripts/tinymce/plugins/advhr/js/rule.js" publishTime="06/23/2012 10:24:06" />
     <file relUrl="Content/themes/base/jquery.ui.button.css" publishTime="06/23/2012 10:22:04" />
-    <file relUrl="Scripts/tinymce/plugins/xhtmlxtras/ins.htm" publishTime="06/23/2012 10:23:55" />
+    <file relUrl="Content/themes/base/images/ui-bg_glass_75_e6e6e6_1x400.png" publishTime="06/23/2012 10:22:04" />
     <file relUrl="Scripts/tinymce/themes/advanced/js/anchor.js" publishTime="06/23/2012 10:23:54" />
     <file relUrl="Scripts/tinymce/plugins/template/blank.htm" publishTime="06/23/2012 10:23:57" />
     <file relUrl="Scripts/tinymce/plugins/noneditable/editor_plugin.js" publishTime="06/23/2012 10:24:00" />
@@ -278,16 +279,16 @@
     <file relUrl="Scripts/tinymce/plugins/advhr/editor_plugin.js" publishTime="06/23/2012 10:24:06" />
     <file relUrl="Scripts/tinymce/plugins/advimage/editor_plugin_src.js" publishTime="06/23/2012 10:24:05" />
     <file relUrl="Scripts/tinymce/plugins/paste/editor_plugin_src.js" publishTime="06/23/2012 10:23:59" />
+    <file relUrl="Scripts/tinymce/utils/editable_selects.js" publishTime="06/23/2012 10:23:52" />
     <file relUrl="Content/themes/base/jquery.ui.theme.css" publishTime="06/23/2012 10:22:04" />
-    <file relUrl="Content/themes/base/minified/images/ui-icons_2e83ff_256x240.png" publishTime="06/23/2012 10:22:03" />
+    <file relUrl="Scripts/tinymce/themes/advanced/skins/default/img/menu_arrow.gif" publishTime="06/23/2012 10:23:53" />
     <file relUrl="Content/themes/base/minified/jquery.ui.accordion.min.css" publishTime="06/23/2012 10:22:03" />
     <file relUrl="Scripts/tinymce/plugins/example/editor_plugin_src.js" publishTime="06/23/2012 10:24:02" />
     <file relUrl="Scripts/tinymce/plugins/media/media.htm" publishTime="06/23/2012 10:24:00" />
-    <file relUrl="Scripts/tinymce/plugins/advimage/editor_plugin.js" publishTime="06/23/2012 10:24:05" />
-    <file relUrl="Content/themes/base/images/ui-bg_glass_75_dadada_1x400.png" publishTime="06/23/2012 10:22:04" />
     <file relUrl="Content/themes/base/jquery.ui.base.css" publishTime="06/23/2012 10:22:04" />
     <file relUrl="Scripts/tinymce/plugins/noneditable/editor_plugin_src.js" publishTime="06/23/2012 10:24:00" />
-    <file relUrl="index.html" publishTime="07/20/2012 07:21:51" />
+    <file relUrl="Scripts/tinymce/plugins/emotions/img/smiley-frown.gif" publishTime="06/23/2012 10:24:03" />
+    <file relUrl="index.html" publishTime="07/20/2012 23:16:23" />
     <file relUrl="Scripts/tinymce/plugins/template/css/template.css" publishTime="06/23/2012 10:23:57" />
     <file relUrl="Scripts/tinymce/plugins/xhtmlxtras/js/cite.js" publishTime="06/23/2012 10:23:55" />
     <file relUrl="Scripts/tinymce/plugins/template/editor_plugin_src.js" publishTime="06/23/2012 10:23:56" />
@@ -298,10 +299,10 @@
     <file relUrl="Scripts/tinymce/plugins/inlinepopups/skins/clearlooks2/img/horizontal.gif" publishTime="06/23/2012 10:24:01" />
     <file relUrl="Scripts/tinymce/plugins/searchreplace/css/searchreplace.css" publishTime="06/23/2012 10:23:58" />
     <file relUrl="Scripts/tinymce/themes/advanced/img/video.gif" publishTime="06/23/2012 10:23:54" />
-    <file relUrl="Scripts/tinymce/themes/advanced/js/link.js" publishTime="06/23/2012 10:23:54" />
+    <file relUrl="Scripts/tinymce/plugins/autoresize/editor_plugin_src.js" publishTime="06/23/2012 10:24:04" />
     <file relUrl="Scripts/tinymce/plugins/visualblocks/css/visualblocks.css" publishTime="06/23/2012 10:23:56" />
     <file relUrl="Content/themes/base/minified/jquery.ui.theme.min.css" publishTime="06/23/2012 10:22:03" />
-    <file relUrl="Scripts/tinymce/themes/advanced/editor_template.js" publishTime="06/23/2012 10:23:55" />
+    <file relUrl="Scripts/tinymce/plugins/advlist/editor_plugin.js" publishTime="06/23/2012 10:24:04" />
     <file relUrl="Scripts/tinymce/plugins/xhtmlxtras/acronym.htm" publishTime="06/23/2012 10:23:56" />
     <file relUrl="Scripts/tinymce/plugins/style/readme.txt" publishTime="06/23/2012 10:23:58" />
     <file relUrl="Content/themes/base/images/ui-icons_222222_256x240.png" publishTime="06/23/2012 10:22:04" />
@@ -312,26 +313,25 @@
     <file relUrl="Scripts/tinymce/plugins/preview/editor_plugin_src.js" publishTime="06/23/2012 10:23:59" />
     <file relUrl="Scripts/tinymce/plugins/advlink/langs/en_dlg.js" publishTime="06/23/2012 10:24:04" />
     <file relUrl="Scripts/tinymce/plugins/example/editor_plugin.js" publishTime="06/23/2012 10:24:02" />
-    <file relUrl="Web.config" publishTime="07/20/2012 07:29:12" />
+    <file relUrl="Web.config" publishTime="07/23/2012 23:36:10" />
     <file relUrl="Scripts/jasmine/jasmine.css" publishTime="07/12/2012 23:15:37" />
     <file relUrl="Scripts/tinymce/plugins/tabfocus/editor_plugin_src.js" publishTime="06/23/2012 10:23:57" />
     <file relUrl="Scripts/tinymce/plugins/media/editor_plugin.js" publishTime="06/23/2012 10:24:00" />
     <file relUrl="Scripts/tinymce/plugins/contextmenu/editor_plugin.js" publishTime="06/23/2012 10:24:04" />
     <file relUrl="Scripts/tinymce/plugins/advlink/editor_plugin_src.js" publishTime="06/23/2012 10:24:05" />
-    <file relUrl="Scripts/tinymce/utils/editable_selects.js" publishTime="06/23/2012 10:23:52" />
+    <file relUrl="Content/themes/base/minified/images/ui-bg_glass_55_fbf9ee_1x400.png" publishTime="06/23/2012 10:22:04" />
     <file relUrl="Scripts/tinymce/plugins/fullpage/editor_plugin.js" publishTime="06/23/2012 10:24:02" />
     <file relUrl="Content/themes/base/images/ui-bg_glass_65_ffffff_1x400.png" publishTime="06/23/2012 10:22:04" />
     <file relUrl="Scripts/tinymce/plugins/xhtmlxtras/css/popup.css" publishTime="06/23/2012 10:23:56" />
     <file relUrl="Content/themes/base/minified/jquery.ui.autocomplete.min.css" publishTime="06/23/2012 10:22:03" />
     <file relUrl="Scripts/tinymce/plugins/style/langs/en_dlg.js" publishTime="06/23/2012 10:23:58" />
     <file relUrl="Scripts/tinymce/themes/simple/skins/default/content.css" publishTime="06/23/2012 10:23:52" />
-    <file relUrl="Scripts/tinymce/plugins/example_dependency/editor_plugin_src.js" publishTime="06/23/2012 10:24:02" />
-    <file relUrl="Content/themes/base/images/ui-bg_glass_55_fbf9ee_1x400.png" publishTime="06/23/2012 10:22:04" />
+    <file relUrl="Scripts/tinymce/plugins/template/langs/en_dlg.js" publishTime="06/23/2012 10:23:56" />
+    <file relUrl="Content/themes/base/images/ui-bg_flat_0_aaaaaa_40x100.png" publishTime="06/23/2012 10:22:04" />
     <file relUrl="Scripts/tinymce/plugins/layer/editor_plugin.js" publishTime="06/23/2012 10:24:01" />
     <file relUrl="Scripts/tinymce/plugins/emotions/editor_plugin.js" publishTime="06/23/2012 10:24:03" />
     <file relUrl="Scripts/tinymce/themes/advanced/langs/en.js" publishTime="06/23/2012 10:23:54" />
     <file relUrl="Scripts/tinymce/plugins/table/js/row.js" publishTime="06/23/2012 10:23:57" />
-    <file relUrl="Scripts/tinymce/plugins/advlink/js/advlink.js" publishTime="06/23/2012 10:24:05" />
     <file relUrl="Scripts/tinymce/utils/form_utils.js" publishTime="06/23/2012 10:23:52" />
     <file relUrl="Content/themes/base/jquery.ui.core.css" publishTime="06/23/2012 10:22:04" />
     <file relUrl="Content/themes/base/jquery.ui.datepicker.css" publishTime="06/23/2012 10:22:04" />
